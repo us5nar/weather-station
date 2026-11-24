@@ -1,0 +1,7 @@
+Wiring (NodeMCU v2)
+Sensor	Pin	NodeMCU
+BME280	VCC / GND	3V3 / G
+BME280	SDA / SCL	D2 / D1
+SDS011	5V / GND	VIN (5V) / G
+SDS011	TX →	D5 (RX)
+SDS011	RX ←	D6 (TX)

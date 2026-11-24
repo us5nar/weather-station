@@ -1,0 +1,25 @@
+
+weather-station/
+├── firmware/
+│   ├── platformio.ini
+│   ├── src/            # main.cpp, scheduler, net, config
+│   ├── lib/Sensors/    # SDS011, BME280, CO2 drivers
+│   └── data/           # web UI for captive portal (LittleFS)
+├── server/
+│   ├── main.py         # FastAPI app
+│   ├── storage.py      # CSV / SQLite / MySQL backends
+│   └── static/         # dashboard HTML/JS/CSS
+└── docs/
+    ├── architecture.md
+    └── wiring.md
+
+
+    Refactored
+    firmware/
+├── platformio.ini    (unchanged)
+├── lib/Sensors/
+│   ├── Sensor.h
+│   ├── BME280Sensor.h
+│   └── SDS011Sensor.h
+└── src/
+    └── main.cpp
