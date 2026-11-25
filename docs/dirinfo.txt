@@ -15,7 +15,7 @@ weather-station/
 
 
     Refactored
-    firmware/
+firmware/
 ├── platformio.ini    (unchanged)
 ├── lib/Sensors/
 │   ├── Sensor.h
@@ -23,3 +23,11 @@ weather-station/
 │   └── SDS011Sensor.h
 └── src/
     └── main.cpp
+
+    step 3
+firmware/
+├── platformio.ini            (add ArduinoJson)
+├── include/secrets.h         (Wi-Fi and server settings, keep out of git)
+├── lib/Sensors/              (unchanged)
+├── lib/Net/Uplink.h          (new)
+└── src/main.cpp              (updated)

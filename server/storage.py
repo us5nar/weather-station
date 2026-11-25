@@ -1,0 +1,6 @@
+# storage.py
+from typing import Protocol
+
+class ReadingStore(Protocol):
+    def save(self, node: str, ts: int, sensors: dict[str, float]) -> None: ...
+    def query(self, node: str, start: int, end: int) -> list[dict]: ...
