@@ -31,3 +31,6 @@ firmware/
 ├── lib/Sensors/              (unchanged)
 ├── lib/Net/Uplink.h          (new)
 └── src/main.cpp              (updated)
+
+add MQ135 Sensor support
+lib/Sensors/MQ135Sensor.h
